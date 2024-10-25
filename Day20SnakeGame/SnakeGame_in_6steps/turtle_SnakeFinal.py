@@ -39,7 +39,6 @@ while moving_snake:
             score_board.write("GAME OVER", align  = "center", font = "Courier")
 
 
-
 screen.exitonclick()
 
 
