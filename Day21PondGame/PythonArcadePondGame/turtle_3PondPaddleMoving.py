@@ -1,4 +1,4 @@
-from turtle_2PongPaddleCreation import *
+from turtle_2PondPaddleCreation import *
 
 def right_paddle_up():
     #the x-axis does not change
@@ -23,11 +23,8 @@ screen.onkey(right_paddle_down, "Down")
 screen.onkey(left_paddle_up, "w")
 screen.onkey(left_paddle_down, "s")
 
-game_is_on = True
-while game_is_on:
-    screen.update()
 
-screen.exitonclick()
+
 
 
 
