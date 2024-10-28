@@ -1,1 +1,0 @@
-from TipCalc import tip_calc
