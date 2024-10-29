@@ -1,4 +1,4 @@
-from treasure_IslandASCIIART import treasure_island
+from island_1TreasureASCIIART import treasure_island
 print(treasure_island)
 
 
@@ -25,7 +25,7 @@ elif ask_direction == "left":
     else:
         print("You have been attacked by trout.\nGame Over.")
 else:
-    print("You fell into a hole\nGame Ove.")
+    print("You fell into a hole\nGame Over.")
 
 
 
