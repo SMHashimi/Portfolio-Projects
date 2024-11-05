@@ -6,5 +6,4 @@ while game_is_on:
     screen.update()
     ball_WallPaddleCollisionX_Y()
 
-
 screen.exitonclick()
