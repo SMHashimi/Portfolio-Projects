@@ -1,5 +1,5 @@
 
-from RockPaperScissorsAsciiArt import *
+from RockPaperScissorsAsciiArt01 import *
 import random
 
 images =  [rock, paper, scissors]
