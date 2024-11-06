@@ -1,5 +1,5 @@
 
-from PythonPracticeDay04 import *
+from RockPaperScissorsAsciiArt import *
 import random
 
 images =  [rock, paper, scissors]
