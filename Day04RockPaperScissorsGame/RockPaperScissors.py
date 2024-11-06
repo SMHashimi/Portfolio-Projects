@@ -1,5 +1,5 @@
 
-from RockPaperScissorsAsciiArt01 import *
+from AsciiArtRockPaperScissors import *
 import random
 
 images =  [rock, paper, scissors]
@@ -19,7 +19,7 @@ elif computer_choice == 0 and user_choice == 2:
 elif computer_choice > user_choice:
     print("You lose!")
 elif user_choice > computer_choice:
-    print("You win !")
+    print("You win!")
 elif computer_choice == user_choice:
     print("Draw")
 
