@@ -42,8 +42,8 @@ def game_play():
                 # game = False
                 return f"Sorry, that's wrong. Final Score: {your_score}"
 
-playing_game = game_play()
-print(playing_game)
+play_game = game_play()
+print(play_game)
 
 
 
