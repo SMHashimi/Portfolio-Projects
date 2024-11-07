@@ -6,20 +6,3 @@ while game_is_on:
     ball_WallPaddleCollisionX_Y()
 
 screen.exitonclick()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
