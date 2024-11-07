@@ -1,7 +1,5 @@
 # PythonProjects
 
-# Python Projects
-
 These projects are derived from the "100 Days of Python Bootcamp" by Angela Yu. While the ideas and structure of these projects were inspired by the course, all of the code and solutions were developed independently by me as part of my learning journey.
 
 Each project aims to demonstrate my understanding and implementation of Python concepts, as well as my ability to solve problems and build applications using Python.
