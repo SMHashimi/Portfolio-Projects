@@ -8,6 +8,6 @@ def go_up():
     y_move = player.ycor() + 10
     player.goto(player.xcor(), y_move)
 screen.listen()
-screen.onkey(go_up, "Up")
+screen.onkey(go_up, "w")
 
 
