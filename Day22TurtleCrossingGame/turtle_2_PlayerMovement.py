@@ -10,4 +10,5 @@ def go_up():
 screen.listen()
 screen.onkey(go_up, "w")
 
-
+import time
+game_is_on = True
