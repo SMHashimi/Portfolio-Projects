@@ -18,7 +18,6 @@ horizontal_position = [-210, -130, -50, 30, 110, 190, 270]
 speed = [-10, -20, -10, -25, -15, -13, -15]
 
 def car_creation():
-    for car_position in range(7):
         all_cars = Turtle("square")
         all_cars.penup()
         all_cars.color("black")
