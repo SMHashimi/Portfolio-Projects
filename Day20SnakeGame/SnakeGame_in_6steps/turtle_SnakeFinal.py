@@ -20,16 +20,16 @@ while moving_snake:
         collision_wall()
 
     if turtles_list[0].distance(tim) < 15:
-        extend_snake()
-        score_board.clear()
-        score += 1
-        score_board.write(f"Score: {score}", align="center", font=("Courier", 24, "normal"))
-        print(score)
+        if turtles_list[0].distance(tim) < 15:
+            extend_snake()
+            score_board.clear()
+            score += 1
+            score_board.write(f"Score: {score}", align="center", font=("Courier", 24, "normal"))
+            print(score)
 
-        random_location_x = random.randint(-320, 320)
-        random_location_y = random.randint(-320, 320)
-        tim.goto(random_location_x, random_location_y)
-
+            random_location_x = random.randint(-320, 320)
+            random_location_y = random.randint(-320, 320)
+            tim.goto(random_location_x, random_location_y)
 
     ##Collision with tail -
     for segment in turtles_list[1:]:
@@ -37,7 +37,6 @@ while moving_snake:
             moving_snake = False
             score_board.goto(0, 0)
             score_board.write("GAME OVER", align  = "center", font = "Courier")
-
 
 screen.exitonclick()
 
