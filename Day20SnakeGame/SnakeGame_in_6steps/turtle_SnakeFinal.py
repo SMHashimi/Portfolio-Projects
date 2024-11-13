@@ -7,7 +7,7 @@ while moving_snake:
     screen.update()
     time.sleep(0.1)
 
-    # for turtle in turtles_list:
+    # for turtle in turtles_list:                                          ##SayedHashimi
     #     turtle.forward(20)
 
     for turtle_num in range(len(turtles_list) - 1, 0, -1):
