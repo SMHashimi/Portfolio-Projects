@@ -23,9 +23,13 @@ while moving_snake:
         if turtles_list[0].distance(tim) < 15:
             extend_snake()
             score_board.clear()
-            score += 1
-            score_board.write(f"Score: {score}", align="center", font=("Courier", 24, "normal"))
-            print(score)
+            score_board.score += 1
+            with open("data.txt", mode = "w") as data:
+                data.write(f"{score_board.score}")
+
+            score_board.write(f"High Score: {score_board.score}", align="center", font=("Courier", 24, "normal"))
+            print(score_board.score)
+
 
             random_location_x = random.randint(-320, 320)
             random_location_y = random.randint(-320, 320)
