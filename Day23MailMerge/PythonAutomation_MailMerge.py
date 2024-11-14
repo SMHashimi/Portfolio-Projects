@@ -10,6 +10,7 @@ with open("./Input/Letters/starting_letter.txt", mode = "r") as letter:
 name_holder = "[name]"
 
 for item in name:
+    trimmed_item  = item.strip()
     with open("./Input/Letters/starting_letter.txt", mode="r") as letter:
         guest_letter = letter.read()
 
@@ -17,37 +18,9 @@ for item in name:
         # print(item)
         # print("yes")
         # print(guest_letter)
-        replacement = guest_letter.replace(name_holder, item )
-        print(replacement)
+        replacement = guest_letter.replace(name_holder, trimmed_item )
+        # print(replacement)
 
-        with open("../Day23MailMerge/BirthdayCeremonyParticipants/InvitationForToph.txt", mode = "w") as toph:
-            for_toph = toph.write(replacement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#
-#
-# for item in name:
-#     people_to_be_invited =  item
-
+        with open(f"./Completed_list/BirthdayCeremonyParticipants/{trimmed_item}.txt", mode = "w") as participants_letter:
+            participants_letter.write(replacement)
+            # print(participants)
