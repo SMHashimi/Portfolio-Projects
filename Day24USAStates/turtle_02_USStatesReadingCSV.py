@@ -24,10 +24,7 @@ def pointing_states_location():
 while len(user_guessed_list) < 50:
     user_StatesInquiry = screen.textinput(f"{len(user_guessed_list)} of 50", "Please guess a state:").title()
     if user_StatesInquiry == "Exit":
-        missed_guessed_states = []
-        for state in USStatesToList:
-            if state not in user_guessed_list:
-                missed_guessed_states.append(state)
+        missed_guessed_states = [state for state in USStatesToList if state not in user_guessed_list]
         print(missed_guessed_states)
         missed_states = pandas.DataFrame(missed_guessed_states)
         missed_states.to_csv("to_learn_in_the_future.csv")

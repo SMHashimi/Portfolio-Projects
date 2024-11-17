@@ -1,5 +1,6 @@
 from turtle import *
 
+
 turtle = Turtle()
 screen = Screen()
 
@@ -20,3 +21,7 @@ game_is_on = True
 #     if orig not in a_list:
 #         empty_list.append(orig)
 # print(empty_list)
+
+
+
+
