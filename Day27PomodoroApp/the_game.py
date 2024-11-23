@@ -1,0 +1,3 @@
+from tkinter_01_PomodoroSettingLayout import the_Pomodoro_technique
+
+the_Pomodoro_technique()
