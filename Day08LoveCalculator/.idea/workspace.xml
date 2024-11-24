@@ -13,26 +13,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2pHFnvwSwbz7tV7aIZppPZoX5Qs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.LongBlocksOfCodes_01_LoveCalculator (1).executor": "Run",
-    "Python.LongBlocksOfCodes_01_LoveCalculator.executor": "Run",
-    "Python.Short_02_LoveCalculator (1).executor": "Run",
-    "Python.Short_02_LoveCalculator.executor": "Run",
-    "Python.Simple_02_LoveCalculator.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.LongBlocksOfCodes_01_LoveCalculator (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.LongBlocksOfCodes_01_LoveCalculator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Short_02_LoveCalculator (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Short_02_LoveCalculator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Simple_02_LoveCalculator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.Short_02_LoveCalculator (1)">
     <configuration name="LongBlocksOfCodes_01_LoveCalculator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Day08LoveCalculator" />
