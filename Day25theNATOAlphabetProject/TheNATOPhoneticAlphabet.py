@@ -1,5 +1,4 @@
 import pandas
-
 nato = pandas.read_csv("nato_phonetic_alphabet.csv")
 
 # letter_and_code = {}
@@ -10,11 +9,14 @@ nato = pandas.read_csv("nato_phonetic_alphabet.csv")
 #     code = row.code
 #     letter_and_code[letter] = code
 
-user_input = input("Please tell me your name? ").upper()
 nato_as_dict = {row.letter:row.code for (letter, row) in nato.iterrows()}
-words_list = [f"{letter} for {nato_as_dict[letter]}" for letter in user_input]
-print(words_list)
-
-
-
-
+def phonetic():
+    user_input = input("Please tell me your name? ").upper()
+    try:
+        words_list = [f"{letter} for {nato_as_dict[letter]}" for letter in user_input]
+    except KeyError:
+        print("Sorry, only letters are accepted.")
+        phonetic()
+    else:
+        print(words_list)
+phonetic()
