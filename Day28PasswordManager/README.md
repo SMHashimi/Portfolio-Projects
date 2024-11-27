@@ -1,2 +1,2 @@
 ## Password Manager
-![tkinterPasswordmanager](https://github.com/user-attachments/assets/5cfec9b0-0c04-448f-96b8-86299d638dca)
+![PasswordManager](https://github.com/user-attachments/assets/345f6214-79ec-452e-8f55-ca5b2e1ee14c)
