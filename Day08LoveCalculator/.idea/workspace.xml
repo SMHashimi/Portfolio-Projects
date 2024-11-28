@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7019055c-c415-4c91-87ac-ade65bd280d9" name="Changes" comment="" />
+    <list default="true" id="7019055c-c415-4c91-87ac-ade65bd280d9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,18 +23,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.LongBlocksOfCodes_01_LoveCalculator (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.LongBlocksOfCodes_01_LoveCalculator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Short_02_LoveCalculator (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.Short_02_LoveCalculator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Simple_02_LoveCalculator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.LongBlocksOfCodes_01_LoveCalculator (1).executor": "Run",
+    "Python.LongBlocksOfCodes_01_LoveCalculator.executor": "Run",
+    "Python.Short_02_LoveCalculator (1).executor": "Run",
+    "Python.Short_02_LoveCalculator.executor": "Run",
+    "Python.Simple_02_LoveCalculator.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.Short_02_LoveCalculator (1)">
     <configuration name="LongBlocksOfCodes_01_LoveCalculator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Day08LoveCalculator" />
