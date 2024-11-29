@@ -2,17 +2,22 @@ from tkinter import *
 import pandas
 import random
 
+try:
+    words = pandas.read_csv("words_to_study.csv")
+except FileNotFoundError:
+    original_data = pandas.read_csv("french_words.csv")
+    en_fr_pairs = original_data.to_dict(orient='records')
+else:
+    en_fr_pairs = words.to_dict(orient = "records")
+
 def generate_french_word():
     global dynamic_screen
     the_flash_window.after_cancel(dynamic_screen)
-    words = pandas.read_csv("french_words.csv")
-    en_fr_pairs = words.to_dict(orient='records')
     global random_french_word
     random_french_word = random.choice(en_fr_pairs)
     global add_to_rightWrong_button
     add_to_rightWrong_button = random_french_word["French"]
     global french_to_english_meaning
-    french_to_english_meaning = [random_french_word[translation] for translation in random_french_word]
     the_flash_canvas.itemconfig(french_word, text = add_to_rightWrong_button, fill = "black")
     the_flash_canvas.itemconfig(french_title, text = "French", font = ("Ariel", 40, "italic"), fill = "black")
     the_flash_canvas.itemconfig(images, image=front_image)
@@ -24,6 +29,17 @@ def flip_card():
     the_flash_canvas.itemconfig(french_title, text = "English", font = ("Ariel", 40, "italic"), fill = "white")
     french_to_english_meaning = [random_french_word[translation] for translation in random_french_word]
     the_flash_canvas.itemconfig(french_word, text=french_to_english_meaning[1], fill = "white")
+
+def known():
+    en_fr_pairs.remove(random_french_word)
+    print(en_fr_pairs)
+    # print(len(en_fr_pairs))
+    known_data = pandas.DataFrame(en_fr_pairs)
+    print(known_data)
+    known_data.to_csv("words_to_study.csv", index = False)
+
+    generate_french_word()
+
 
 the_flash_window = Tk()
 the_flash_window.title("The Flash Card Game")
@@ -43,7 +59,7 @@ french_word = the_flash_canvas.create_text(400, 263, font = ("Ariel", 60, "bold"
 
 #Creating the two buttons (right & wrong)
 right_button_image = PhotoImage(file = "./images/right.png")
-right_button = Button(image = right_button_image, highlightthickness = 0, bd = 0, command = generate_french_word)
+right_button = Button(image = right_button_image, highlightthickness = 0, bd = 0, command = known)
 right_button.grid(column = 1, row = 2)
 
 wrong_button_image = PhotoImage(file = "./images/wrong.png")
