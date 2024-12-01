@@ -39,7 +39,7 @@ for index, row in birthday_data.iterrows():
     if name_holder in letter:
         replacement = letter.replace(name_holder, row["name"])
     # print(row["name"])
-    if (current_date.year) == row["year"] and (current_date.month) == row["month"] and (current_date.day) == row["day"]:
+    if (current_date.month) == row["month"] and (current_date.day) == row["day"]:
         connection = SMTP("smtp.gmail.com")
         connection.starttls()
         connection.login(user=MY_EMAIL, password=PASSWORD)
