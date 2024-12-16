@@ -6,4 +6,4 @@ Each project aims to demonstrate my understanding and implementation of Python c
 
 Feel free to explore the repositories and review the projects. Contributions, feedback, and suggestions are welcome!
 
-![fasdfasd](https://github.com/user-attachments/assets/1f8eea1f-b62c-4b8a-b8f0-026b2a4a70bb)
+
