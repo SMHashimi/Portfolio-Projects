@@ -12,9 +12,10 @@ def higher_lower_game():
                                                if the user choice is higher than the random,
                                                                             or not. 
 """
+from_0_to_9 = random.randint(0, 9)
+print(from_0_to_9)
 @app.route("/<int:number>")
 def play_game(number):
-    from_0_to_9 = random.randint(0, 9)
     if number == from_0_to_9:
         return '<h1><b>You found me!</b></h1>' \
         '<img src = "https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif" width = 450 height = 340>'
